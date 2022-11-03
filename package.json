@@ -1,0 +1,25 @@
+{
+  "name": "preentrega3perezaldana",
+  "version": "1.0.0",
+  "description": "preentrega 3 de desarrollo web en coderhouse by pedro perez aldana",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ASTHOMAS4/PreEntrega3-PerezAldana.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "ASTHOMAS4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ASTHOMAS4/PreEntrega3-PerezAldana/issues"
+  },
+  "homepage": "https://github.com/ASTHOMAS4/PreEntrega3-PerezAldana#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
