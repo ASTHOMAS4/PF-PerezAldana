@@ -1,3 +1,9 @@
+/*vars*/
+$colormorty: #fef972;
+$colornegro: #0e0e0e;
+$colorgris: lightslategray;
+
+
 .centrarbarra{
     width: 100%;
     max-width: 700px;
@@ -18,7 +24,7 @@
         align-content: center;
         display: flex;
         border-radius: 25px;
-        border-color: lightslategray;
+        border-color: $colorgris;
         border: 2px;
         border-style: solid;
         min-width: 100px;
@@ -34,13 +40,13 @@
             } 
         }
         .input{
-            background-color: #FEF972;
+            background-color: $colormorty;
         }
 
         .icon{
             display: grid;
             align-content: center;
-            color: grey;
+            color: $colorgris;
         }
     }
     .iconoCarrito{
@@ -48,10 +54,10 @@
         margin-right: 15px;
         margin-left: 15px;
         padding: 5px 5px 5px 5px;
-        background-color: #FEF972;
+        background-color: $colormorty;
         display: flex;
         border-radius: 15px;
-        border-color: lightslategray;
+        border-color: $colorgris;
         border: 2px;
         border-style: solid;
         

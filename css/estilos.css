@@ -52,6 +52,110 @@ nav #check {
   display: none;
 }
 
+/*VARIABLES*/ /*vars*/
+.centrarbarra {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+  justify-content: space-between;
+  align-content: center;
+}
+.centrarbarra .barra_busqueda {
+  width: 90%;
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 5px 15px 5px 10px;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  border-radius: 25px;
+  border-color: lightslategray;
+  border: 2px;
+  border-style: solid;
+  min-width: 100px;
+  background-color: #FEF972;
+}
+.centrarbarra .barra_busqueda input {
+  width: 100%;
+  height: 30px;
+  margin: 0 5px;
+  border: none;
+}
+.centrarbarra .barra_busqueda input:focus {
+  outline: none;
+}
+.centrarbarra .barra_busqueda .input {
+  background-color: #fef972;
+}
+.centrarbarra .barra_busqueda .icon {
+  display: grid;
+  align-content: center;
+  color: lightslategray;
+}
+.centrarbarra .iconoCarrito {
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 5px 5px 5px 5px;
+  background-color: #fef972;
+  display: flex;
+  border-radius: 15px;
+  border-color: lightslategray;
+  border: 2px;
+  border-style: solid;
+}
+.centrarbarra .iconoCarrito .fotocarrito {
+  height: 35px;
+}
+
+footer {
+  display: inline;
+  left: 0px;
+  background-color: #9FE6E8;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  justify-content: space-between;
+  padding: 10px;
+  height: 80px;
+}
+footer p {
+  margin-bottom: 20px;
+  color: #0e0e0e;
+  text-align: right;
+  font-size: large;
+  font-family: "Outfit", sans-serif;
+}
+footer img {
+  height: 40px;
+  align-content: space-between;
+  margin: 5px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+footer .pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+footer .pie .redes {
+  justify-content: left;
+  min-width: 200px;
+}
+footer .pie .info {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 350px;
+}
+footer #jerry {
+  border-radius: 20px;
+}
+
 @media (max-width: 952px) {
   nav .enlace {
     padding-left: 20px;
@@ -90,66 +194,40 @@ nav #check {
     left: 0;
   }
 }
-/*VARIABLES*/
-.centrarbarra {
-  width: 100%;
-  max-width: 700px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: auto;
-  justify-content: space-between;
-  align-content: center;
+@media (max-width: 560px) {
+  footer {
+    position: relative;
+    height: 200px;
+    margin-bottom: 0;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer img {
+    margin-bottom: 10px;
+    align-content: center;
+  }
+  footer .pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .pie .redes {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-width: 0;
+  }
+  footer .pie .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-.centrarbarra .barra_busqueda {
-  width: 90%;
-  margin-top: 15px;
-  margin-left: 15px;
-  padding: 5px 15px 5px 10px;
-  align-items: center;
-  align-content: center;
-  display: flex;
-  border-radius: 25px;
-  border-color: lightslategray;
-  border: 2px;
-  border-style: solid;
-  min-width: 100px;
-  background-color: #FEF972;
-}
-.centrarbarra .barra_busqueda input {
-  width: 100%;
-  height: 30px;
-  margin: 0 5px;
-  border: none;
-}
-.centrarbarra .barra_busqueda input:focus {
-  outline: none;
-}
-.centrarbarra .barra_busqueda .input {
-  background-color: #FEF972;
-}
-.centrarbarra .barra_busqueda .icon {
-  display: grid;
-  align-content: center;
-  color: grey;
-}
-.centrarbarra .iconoCarrito {
-  margin-top: 15px;
-  margin-right: 15px;
-  margin-left: 15px;
-  padding: 5px 5px 5px 5px;
-  background-color: #FEF972;
-  display: flex;
-  border-radius: 15px;
-  border-color: lightslategray;
-  border: 2px;
-  border-style: solid;
-}
-.centrarbarra .iconoCarrito .fotocarrito {
-  height: 35px;
-}
-
 /*variables*/
 /*GENERALES*/
 * {
@@ -158,6 +236,14 @@ nav #check {
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+}
+
+body {
+  min-width: 250px;
+  background-image: linear-gradient(360deg, #0e0e0e 0%, #10a7c9);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=estilos.css.map */

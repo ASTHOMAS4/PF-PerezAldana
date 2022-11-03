@@ -4,6 +4,8 @@
 @import "navbar" ;
 @import "variables" ;
 @import "barraycarrito" ;
+@import "footer" ;
+@import "responsive" ;
 
 /*variables*/
 $colorrick: #9FE6E8 ;
@@ -18,4 +20,11 @@ $colornavresponsive: #2c3e50;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
+body{
+    min-width: 250px;
+    background-image: linear-gradient( 360deg, #0e0e0e 0%, #10a7c9 );
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
