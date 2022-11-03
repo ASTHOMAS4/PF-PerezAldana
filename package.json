@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css" : "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "build-css" : "sass scss/estilos.scss css/estilos.css",
     "watch-css" : "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/ASTHOMAS4/PreEntrega3-PerezAldana#readme",
   "devDependencies": {
-    "nodemon": "^2.0.20",
-    "node-sass": "7.0.3"
+    "nodemon": "^2.0.20"
   }
 }
