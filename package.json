@@ -4,7 +4,9 @@
   "description": "preentrega 3 de desarrollo web en coderhouse by pedro perez aldana",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css" : "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css" : "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   },
   "homepage": "https://github.com/ASTHOMAS4/PreEntrega3-PerezAldana#readme",
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "node-sass": "7.0.3"
   }
 }
