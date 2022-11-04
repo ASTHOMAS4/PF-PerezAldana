@@ -52,7 +52,89 @@ nav #check {
   display: none;
 }
 
-/*VARIABLES*/ /*vars*/
+/*variables*/
+/*GENERALES*/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 250px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-width: 250px;
+  background-image: linear-gradient(360deg, #0e0e0e 0%, #10a7c9);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.8rem;
+  color: #9FE6E8;
+  font-family: "Outfit", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Outfit", sans-serif;
+  color: #fef972;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-family: "Outfit", sans-serif;
+  color: #fef972;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-family: "Outfit", sans-serif;
+  color: #fef972;
+}
+
+/*botones*/
+.botonbase, .btnjerry, .btn {
+  font-family: "Outfit", sans-serif;
+  font-size: 2.4rem;
+  border-color: #0e0e0e;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px;
+  border-style: solid;
+  min-width: 100px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #fef972;
+}
+
+.btnjerry {
+  background-color: #055ec4;
+}
+
+/*vars*/
 .centrarbarra {
   width: 100%;
   max-width: 700px;
@@ -63,6 +145,9 @@ nav #check {
   height: auto;
   justify-content: space-between;
   align-content: center;
+}
+.centrarbarra h1 {
+  margin-top: 12px;
 }
 .centrarbarra .barra_busqueda {
   width: 90%;
@@ -228,90 +313,113 @@ footer #jerry {
     align-items: center;
   }
 }
-/*variables*/
-/*GENERALES*/
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+.ContenidoPage, .titulos, .filtros, .ContenidoCatalogo {
+  padding-bottom: 5%;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+.ContenidoPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+.texto_index {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  height: 60%;
+  width: 60%;
+  margin-left: 40%;
+  margin-bottom: 20%;
 }
 
-body {
-  min-width: 250px;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  min-width: 250px;
-  background-image: linear-gradient(360deg, #0e0e0e 0%, #10a7c9);
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
+.rymimg {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  min-width: 150px;
+  margin-bottom: 15%;
 }
 
-ul {
-  list-style-type: none;
+.jerryCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 200px;
+  height: 400px;
+  text-align: center;
+  margin-left: 5%;
+  margin-left: 30%;
+  margin-bottom: 20%;
+}
+.jerryCard .jerrymamadoimg {
+  border: solid 4px #FEF972;
+  border-radius: 10%;
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 15%;
 }
 
-.ContenidoPage, .titulos, .filtros {
-  margin-bottom: 5%;
+.nosotrosTexto {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 60%;
+  margin-top: 0%;
+  margin-right: 20%;
+  margin-bottom: 10%;
+  text-align: right;
 }
 
-p {
-  font-size: 1.8rem;
-  color: #0e0e0e;
-  font-family: "Outfit", sans-serif;
+#CatalogoD {
+  display: grid;
+  gap: 10px;
+  align-items: flex-start;
+  align-content: space-between;
+  grid-template-areas: "filtro galeria galeria galeria galeria" "filtro galeria galeria galeria galeria";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
-h1 {
-  font-size: 3rem;
-  font-family: "Outfit", sans-serif;
-  color: #fef972;
+.ContenidoCatalogo {
+  grid-area: galeria;
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-right: auto;
+  margin-bottom: 10%;
 }
 
-h2 {
-  font-size: 2.4rem;
-  font-family: "Outfit", sans-serif;
-  color: #fef972;
-}
-
-h3 {
-  font-size: 2rem;
-  font-weight: lighter;
-  font-family: "Outfit", sans-serif;
-  color: #fef972;
-}
-
-/*botones*/
-.botonbase, .btnjerry, .btn {
-  font-family: "Outfit", sans-serif;
-  font-size: 2.4rem;
-  border-color: #0e0e0e;
-  padding: 10px;
-  border-radius: 25px;
-  border: 2px;
-  border-style: solid;
-  min-width: 100px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.btn {
+.filtros {
+  grid-area: filtro;
+  display: block;
   background-color: #fef972;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: auto;
+}
+.filtros p {
+  color: #0e0e0e;
 }
 
-.btnjerry {
-  background-color: #055ec4;
+.galeria {
+  height: auto;
+  width: auto;
+  background-color: #fef972;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  border-radius: 15px;
+  padding: 5px;
+}
+.galeria img {
+  height: 150px;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
