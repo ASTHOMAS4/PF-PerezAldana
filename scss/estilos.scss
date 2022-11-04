@@ -7,7 +7,7 @@
 @import "footer" ;
 @import "responsive" ;
 
-.ContenidoPage, .titulos, .filtros, .ContenidoCatalogo{
+.ContenidoPagecart, .ContenidoPage, .titulos, .filtros, .ContenidoCatalogo{
     padding-bottom: 5%;
 }
 
@@ -61,12 +61,12 @@
 .nosotrosTexto{
     display: flex;
     flex-direction: column;
-    height: 80%;
-    width: 60%;
+    height: 90%;
+    width: 90%;
     margin-top: 0%;
-    margin-right: 20%;
     margin-bottom: 10%;
     text-align: right;
+    padding: 20px;
 }
 
 #CatalogoD{
@@ -113,14 +113,62 @@
     background-color: $colormorty;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
     margin: 15px;
     border-radius: 15px;
     padding: 5px;
 
-    
+    p{
+        color: $colornegro;
+    }
     img{
         height: 150px;
         border-radius: 15px;
     }
+    button{
+        @extend .botonbase;
+        font-size: $font-p;
+        color: $colormorty;
+        border-color: $colornegro;
+        background-color: $sombraazul;
+    }
+}
+
+.titulocart{
+    margin-left: 10%;
+}
+.ContenidoPagecart{
+    
+    align-content: center;
+    padding: auto;
+    margin: auto;
+    margin-left: 10%;
+
+    
+}
+.contenedorcarro{
+    display: flex;
+    
+
+    width: 90%;
+    height: auto;
+    background-color: $colornavresponsive;
+    border-radius: 20px;
+    border: 2px;
+    border-color: $colornegro;
+    justify-content: space-between;
+    
+}
+
+.carrogrande{
+    height: 250px;
+}
+.botonescart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 90%;
+    height: auto;
+    margin-bottom: 5%;
 }

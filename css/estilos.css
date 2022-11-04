@@ -113,7 +113,7 @@ h3 {
 }
 
 /*botones*/
-.botonbase, .btnjerry, .btn {
+.botonbase, .galeria button, .btnjerry, .btn {
   font-family: "Outfit", sans-serif;
   font-size: 2.4rem;
   border-color: #0e0e0e;
@@ -313,7 +313,7 @@ footer #jerry {
     align-items: center;
   }
 }
-.ContenidoPage, .titulos, .filtros, .ContenidoCatalogo {
+.ContenidoPagecart, .ContenidoPage, .titulos, .filtros, .ContenidoCatalogo {
   padding-bottom: 5%;
 }
 
@@ -367,12 +367,12 @@ footer #jerry {
 .nosotrosTexto {
   display: flex;
   flex-direction: column;
-  height: 80%;
-  width: 60%;
+  height: 90%;
+  width: 90%;
   margin-top: 0%;
-  margin-right: 20%;
   margin-bottom: 10%;
   text-align: right;
+  padding: 20px;
 }
 
 #CatalogoD {
@@ -413,13 +413,58 @@ footer #jerry {
   background-color: #fef972;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 15px;
   border-radius: 15px;
   padding: 5px;
 }
+.galeria p {
+  color: #0e0e0e;
+}
 .galeria img {
   height: 150px;
   border-radius: 15px;
+}
+.galeria button {
+  font-size: 1.8rem;
+  color: #fef972;
+  border-color: #0e0e0e;
+  background-color: #055ec4;
+}
+
+.titulocart {
+  margin-left: 10%;
+}
+
+.ContenidoPagecart {
+  align-content: center;
+  padding: auto;
+  margin: auto;
+  margin-left: 10%;
+}
+
+.contenedorcarro {
+  display: flex;
+  width: 90%;
+  height: auto;
+  background-color: #2c3e50;
+  border-radius: 20px;
+  border: 2px;
+  border-color: #0e0e0e;
+  justify-content: space-between;
+}
+
+.carrogrande {
+  height: 250px;
+}
+
+.botonescart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  width: 90%;
+  height: auto;
+  margin-bottom: 5%;
 }
 
 /*# sourceMappingURL=estilos.css.map */
