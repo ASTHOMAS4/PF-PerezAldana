@@ -1,4 +1,4 @@
-/*NAVBAR*/
+/*IMPORTS DE PARCIALES*/
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;900&display=swap);
 nav {
@@ -313,6 +313,7 @@ footer #jerry {
     align-items: center;
   }
 }
+/*TODAS*/
 .ContenidoPagecart, .ContenidoPage, .titulos, .filtros, .ContenidoCatalogo {
   padding-bottom: 5%;
 }
@@ -323,6 +324,7 @@ footer #jerry {
   align-items: center;
 }
 
+/*PAGINA INDEX*/
 .texto_index {
   padding: 5%;
   display: flex;
@@ -343,6 +345,7 @@ footer #jerry {
   margin-bottom: 15%;
 }
 
+/*PAGINA NOSOTROS*/
 .jerryCard {
   display: flex;
   flex-direction: column;
@@ -375,6 +378,7 @@ footer #jerry {
   padding: 20px;
 }
 
+/* PAGINA CATALOGO*/
 #CatalogoD {
   display: grid;
   gap: 10px;
@@ -432,6 +436,7 @@ footer #jerry {
   background-color: #055ec4;
 }
 
+/*PAGINA MI CARRITO*/
 .titulocart {
   margin-left: 10%;
 }
@@ -465,6 +470,77 @@ footer #jerry {
   width: 90%;
   height: auto;
   margin-bottom: 5%;
+}
+
+/*PAGINA RESGISTRARSE*/
+.registertitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+}
+.registertitle h1 {
+  margin-bottom: 7px;
+}
+
+.ContenidoPageR {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.formulario-de-registro {
+  background-color: #9FE6E8;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 10%;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  padding: 10px;
+  border-radius: 20px;
+  gap: 5px;
+}
+fieldset legend {
+  margin-left: 10px;
+}
+fieldset p {
+  color: #0e0e0e;
+}
+fieldset input {
+  border-radius: 10px;
+}
+fieldset select {
+  border-radius: 10px;
+}
+
+.genero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.registerCont {
+  margin-left: 15px;
+}
+
+.registerCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #9FE6E8;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: auto;
 }
 
 /*# sourceMappingURL=estilos.css.map */

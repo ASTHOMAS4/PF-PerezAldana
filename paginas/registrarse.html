@@ -46,14 +46,13 @@
                 <a href="./mi-carrito.html"><img src="../recursos/imagenes/basicos/iconocarrito.png" alt="" class="fotocarrito"></a>
             </div>
         </section>
-        <div>
-            <h2>Wooba Looba Dub Dub</h2>
+        <div class="registertitle">
             <h1>Registrarse</h1>
             <p>
                 Obtén descuentos, arma combos y recibe ofertas en tu mail registrándote.
             </p>
         </div>
-        <section class="ContenidoPage">
+        <section class="ContenidoPageR">
             <div class="formulario-de-registro">
                 <form action="">
                     <fieldset>
@@ -74,13 +73,15 @@
                         <p>
                             Género
                         </p>
-
-                        <label for="sexo">masculino</label>
-                        <input type="radio" name="sexo" value="masculino">
-                        <label for="sexo">femenino</label>
-                        <input type="radio" name="sexo" value="femenino">
-                        <label for="sexo">otro</label>
-                        <input type="radio" name="sexo" value="otro">
+                        <div class="genero">
+                            <label for="sexo">masculino</label>
+                            <input type="radio" name="sexo" value="masculino">
+                            <label for="sexo">femenino</label>
+                            <input type="radio" name="sexo" value="femenino">
+                            <label for="sexo">otro</label>
+                            <input type="radio" name="sexo" value="otro">
+                        </div>
+                        
 
                         <p>Se Considera</p>
 
@@ -90,21 +91,23 @@
                             <option value="clon">Clon</option>
                         </select>
 
-                        <label for="Contraseña">Contraseña</label>
-                        <input type="password" name="contraseña">
+                        <div class="genero">
+                            <label for="Contraseña">Contraseña</label>
+                            <label for="Confirma tu Contraseña">Confirma tu Contraseña</label>
+                        </div>
+                        <div class="genero">
+                            <input type="password" name="contraseña">
+                            <input type="password" name="contraseña">
+                        </div>
+                        
 
-                        <label for="Confirma tu Contraseña">Confirma tu Contraseña</label>
-                        <input type="password" name="contraseña">
-
-                        <input type="reset" value="Limpiar Info">
-                        <input type="submit" value="Completar Registro">
+                        <input class="btn" type="reset" value="Limpiar Info">
+                        <input class="btn" type="submit" value="Completar Registro">
                     </fieldset>
                 </form>
             </div>
-            <div>
-                <div>
-                    <img src="../recursos/imagenes/basicos/imagen-cuerpo-index.png" alt="" height="350px" class="rymimg">
-                </div>
+            <div class="registerCont">
+                <img src="../recursos/imagenes/basicos/imagen-cuerpo-index.png" alt=""  class="rymimg">
                 <button class="btn">TENGO UN CUPÓN</button>
             </div>
         </section>
