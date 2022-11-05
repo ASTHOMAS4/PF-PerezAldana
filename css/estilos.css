@@ -387,6 +387,7 @@ footer #jerry {
   width: 200px;
   height: 400px;
   grid-area: imagen_index;
+  margin-bottom: 20px;
 }
 .jerryCard .jerrymamadoimg {
   border: solid 4px #FEF972;
@@ -401,6 +402,7 @@ footer #jerry {
   height: 90%;
   width: 80%;
   margin-top: 0%;
+  margin-bottom: 10%;
   text-align: right;
   margin-left: 20%;
   padding: 20px;
@@ -479,6 +481,7 @@ footer #jerry {
 
 .contenedorcarro {
   display: flex;
+  flex-wrap: wrap;
   width: 90%;
   height: auto;
   background-color: #2c3e50;
@@ -618,6 +621,13 @@ fieldset select {
     margin-top: 10px;
   }
   .ContenidoCatalogo {
+    justify-content: center;
+  }
+  .contenedorcarro .galeria {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .botonescart {
     justify-content: center;
   }
   footer {
