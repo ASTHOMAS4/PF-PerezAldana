@@ -6,6 +6,7 @@
 @import "barraycarrito" ;
 @import "footer" ;
 @import "responsive" ;
+@import "animaciones";
 
 /*TODAS*/
 .ContenidoPagecart, .ContenidoPage, .titulos, .filtros, .ContenidoCatalogo{
@@ -13,9 +14,16 @@
 }
 
 .ContenidoPage{
+    width: 100%;
     display: grid;
+    grid-template-areas:
+    "centrarbarra centrarbarra"
+    "texto_index imagen_index";
     grid-template-columns: 1fr 1fr;
+    
     align-items: center;
+    justify-content: center;
+    
 }
 /*PAGINA INDEX*/
 .texto_index{
@@ -24,19 +32,19 @@
     flex-direction: column;
     align-items: left;
     justify-content: space-evenly;
-
+    grid-area: texto_index;
     height: 60%;
     width: 60%;
     margin-left: 40%;
-    margin-bottom: 20%;
 }
-
+.imagen_index{
+    grid-area: imagen_index; 
+}
 .rymimg{
     height: auto;
     width: 100%;
     max-width: 300px;
     min-width: 150px;
-    margin-bottom: 15%;
 }
 
 /*PAGINA NOSOTROS*/
@@ -45,31 +53,28 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    text-align: center;
     width: 200px;
     height: 400px;
-    text-align: center;
-    margin-left: 5%;
-    margin-left: 30%;
-    margin-bottom: 20%;
+    grid-area: imagen_index;
 
     .jerrymamadoimg{
         border: solid 4px #FEF972;
         border-radius: 10%;
         height: auto;
-        width: 100%;
         max-width: 300px;
-        margin-top: 15%;
     }
 }
 .nosotrosTexto{
     display: flex;
     flex-direction: column;
     height: 90%;
-    width: 90%;
+    width: 80%;
     margin-top: 0%;
-    margin-bottom: 10%;
     text-align: right;
+    margin-left: 20%;
     padding: 20px;
+    grid-area: texto_index;
 }
  /* PAGINA CATALOGO*/
 #CatalogoD{
@@ -246,4 +251,96 @@ fieldset{
     height: auto;
     border-radius: 20px;
     margin-bottom: auto;
+}
+
+/*standarts*/
+@media (max-width: $tablet-width){
+    .ContenidoPage{
+        display: grid;
+        grid-template-areas:
+        "centrarbarra"
+        "texto_index"
+        "imagen_index";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;   
+    }
+    .texto_index{
+        align-items: center;
+        height: auto;
+        width: 90%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        text-align: center;
+        h1{
+            align-items: center;
+        }
+    }
+    .imagen_index{
+        justify-content: center;
+        margin-bottom: auto;
+        margin-left: 15%;
+    }
+    .jerryCard{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nosotrosTexto{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    #CatalogoD{
+        grid-template-areas: 
+            "filtro"
+            "galeria"; 
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto auto;
+    }
+    .filtros{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 10px;
+    }
+    .ContenidoCatalogo{
+        justify-content: center;
+    }
+    footer{
+        position: relative;
+        height: 200px;
+        margin-bottom: 0;
+        min-width: 250px;
+
+        display: flex;
+        flex-direction: column;
+
+        p{
+            text-align: center;
+        }
+        img{
+            margin-bottom: 10px;
+            align-content: center;
+            }
+
+        .pie{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            .redes{
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                min-width: 0;
+            }
+            .info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
 }
