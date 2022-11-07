@@ -33,7 +33,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="registergrid">
         <section class="centrarbarra">
             <div class="barra_busqueda">
                 <input type="text" class="input">
@@ -55,67 +55,64 @@
                 Obtén descuentos, arma combos y recibe ofertas en tu mail registrándote.
             </p>
         </div>
-        <section class="ContenidoPageR">
-            <div class="formulario-de-registro">
-                <form action="">
-                    <fieldset>
-                        <legend>FORMULARIO DE REGISTRO</legend>
-
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre">
-
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido">
-
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email">
-
-                        <label for="telefono">Teléfono</label>
-                        <input type="number" name="telefono">
-
-                        <p>
-                            Género
-                        </p>
-                        <div class="genero">
-                            <label for="sexo">masculino</label>
-                            <input type="radio" name="sexo" value="masculino">
-                            <label for="sexo">femenino</label>
-                            <input type="radio" name="sexo" value="femenino">
-                            <label for="sexo">otro</label>
-                            <input type="radio" name="sexo" value="otro">
-                        </div>
-                        
-
-                        <p>Se Considera</p>
-
-                        <select name="tallas" id="">
-                            <option value="humano">Humano</option>
-                            <option value="alien">Alien</option>
-                            <option value="clon">Clon</option>
-                        </select>
-
-                        <div class="genero">
-                            <label for="Contraseña">Contraseña</label>
-                            <label for="Confirma tu Contraseña">Confirma tu Contraseña</label>
-                        </div>
-                        <div class="genero">
-                            <input type="password" name="contraseña">
-                            <input type="password" name="contraseña">
-                        </div>
-                        
-
-                        <input class="btn" type="reset" value="Limpiar Info">
-                        <input class="btn" type="submit" value="Completar Registro">
-                    </fieldset>
-                </form>
-            </div>
-            <div class="registerCont">
-                <img src="../recursos/imagenes/basicos/imagen-cuerpo-index.png" alt=""  class="rymimg">
-                <button class="btn">TENGO UN CUPÓN</button>
-            </div>
-        </section>
         
+        <div class="formulario-de-registro">
+            <form action="">
+                <fieldset>
+                    <legend>FORMULARIO DE REGISTRO</legend>
 
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre">
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="number" name="telefono">
+
+                    <p>
+                        Género
+                    </p>
+                    <div class="genero">
+                        <label for="sexo">masculino</label>
+                        <input type="radio" name="sexo" value="masculino">
+                        <label for="sexo">femenino</label>
+                        <input type="radio" name="sexo" value="femenino">
+                        <label for="sexo">otro</label>
+                        <input type="radio" name="sexo" value="otro">
+                    </div>
+                        
+
+                    <p>Se Considera</p>
+
+                    <select name="tallas">
+                        <option value="humano">Humano</option>
+                        <option value="alien">Alien</option>
+                        <option value="clon">Clon</option>
+                    </select>
+
+                    <div class="genero">
+                        <label for="Contraseña">Contraseña</label>
+                        <label for="Confirma tu Contraseña">Confirma tu Contraseña</label>
+                    </div>
+                    <div class="genero">
+                        <input type="password" name="contraseña">
+                        <input type="password" name="contraseña">
+                    </div>
+                        
+
+                    <input class="btn" type="reset" value="Limpiar Info">
+                    <input class="btn" type="submit" value="Completar Registro">
+                </fieldset>
+            </form>
+        </div>
+        <div class="registerCont">
+            <img src="../recursos/imagenes/basicos/imagen-cuerpo-index.png" alt=""  class="rymimg">
+            <button class="btn">TENGO UN CUPÓN</button>
+        </div>    
     </main>
 
     <footer>

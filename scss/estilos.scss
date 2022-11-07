@@ -193,23 +193,28 @@
     justify-content: center;
     gap: 10px;
     margin: auto;
+    grid-area: registertitle;
     h1{
         margin-bottom: 7px;
     }
 }
-.ContenidoPageR{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}
+
 .formulario-de-registro{
     
     background-color: $colorrick;
     padding: 20px;
     border-radius: 20px;
-   
     margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    align-content: center;
+    grid-area: formulario;
+    
+}
+form{
+    display: flex;
+    justify-content: center;
 }
 fieldset{
     display: flex;
@@ -218,7 +223,7 @@ fieldset{
     font-size: $font-p;
     padding: 10px;
     border-radius: 20px;
-    gap: 5px;
+    gap: 3px;
     legend{
         margin-left: 10px;
     }
@@ -231,29 +236,42 @@ fieldset{
     select{
         border-radius: 10px;
     }
+    
 
 }
 .genero{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10px;
-}
-.registerCont{
-    margin-left: 15px;
+    gap: 3px;
 }
 
 .registerCont{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     padding: 10px;
     background-color: $colorrick;
     height: auto;
     border-radius: 20px;
     margin-bottom: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-area: registercont;
 }
+
+.registergrid{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-areas: 
+    "centrarbarra centrarbarra"
+    "registertitle registertitle"
+    "formulario registercont";
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5%;
+}
+
 
 /*standarts*/
 @media (max-width: $tablet-width){
@@ -318,6 +336,8 @@ fieldset{
     .botonescart{
         justify-content: center;
     }
+
+
     footer{
         position: relative;
         height: 200px;
@@ -353,5 +373,13 @@ fieldset{
                 align-items: center;
             }
         }
+    }
+    .registergrid{
+        grid-template-areas: 
+        "centrarbarra"
+        "registertitle"
+        "formulario"
+        "registercont";
+        grid-template-columns: 1fr;
     }
 }
