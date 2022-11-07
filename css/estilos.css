@@ -251,7 +251,7 @@ footer #jerry {
     font-size: 16px;
   }
 }
-/*nav y footer*/
+/*nav*/
 @media (max-width: 858px) {
   nav .checkbtn {
     display: block;
@@ -382,12 +382,12 @@ footer #jerry {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   text-align: center;
   width: 200px;
   height: 400px;
   grid-area: imagen_index;
   margin-bottom: 20px;
+  margin-left: 10%;
 }
 .jerryCard .jerrymamadoimg {
   border: solid 4px #FEF972;

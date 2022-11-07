@@ -52,12 +52,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     text-align: center;
     width: 200px;
     height: 400px;
     grid-area: imagen_index;
     margin-bottom: 20px;
+    margin-left: 10%;
 
     .jerrymamadoimg{
         border: solid 4px #FEF972;
@@ -272,7 +272,6 @@ fieldset{
     margin-bottom: 5%;
 }
 
-
 /*standarts*/
 @media (max-width: $tablet-width){
     .ContenidoPage{
@@ -383,3 +382,4 @@ fieldset{
         grid-template-columns: 1fr;
     }
 }
+
