@@ -1,58 +1,10 @@
 /*IMPORTS DE PARCIALES*/
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;900&display=swap);
-nav {
-  background: #9FE6E8;
-  height: 80px;
-  width: 100%;
-}
-nav .enlace {
-  position: absolute;
-  padding: 15px 50px;
-}
-nav .enlace .logo {
-  height: 50px;
-}
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-nav li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-nav li a {
-  color: #0e0e0e;
-  font-size: 18px;
-  font-family: "Outfit", sans-serif;
-  padding: 7px 13px;
-  border-radius: 15px;
-  text-transform: uppercase;
-}
-nav li a.active, nav li a:hover {
-  background: #055ec4;
-  transition: 0.5s;
-  color: #fef972;
-}
-nav i .active, nav i:hover {
-  transition: 0.5s;
-  color: #fef972;
-}
-nav .checkbtn {
-  font-size: 30px;
-  color: #0e0e0e;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-nav #check {
-  display: none;
-}
-
 /*variables*/
+/*colores*/
+/*medidas de pantalla*/
+/*estilos textos*/
 /*GENERALES*/
 html {
   font-size: 62.5%;
@@ -86,6 +38,7 @@ ul {
   list-style-type: none;
 }
 
+/*textos*/
 p {
   font-size: 1.8rem;
   color: #9FE6E8;
@@ -133,7 +86,58 @@ h3 {
   background-color: #055ec4;
 }
 
-/*vars*/
+nav {
+  background: #9FE6E8;
+  height: 80px;
+  width: 100%;
+}
+nav .enlace {
+  position: absolute;
+  padding: 15px 50px;
+}
+nav .enlace .logo {
+  height: 50px;
+}
+nav ul {
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+}
+nav li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav li a {
+  color: #0e0e0e;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  padding: 7px 13px;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+nav li a.active, nav li a:hover {
+  background: #055ec4;
+  transition: 0.5s;
+  color: #fef972;
+}
+nav i .active, nav i:hover {
+  transition: 0.5s;
+  color: #fef972;
+}
+nav .checkbtn {
+  font-size: 30px;
+  color: #0e0e0e;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+nav #check {
+  display: none;
+}
+
 .centrarbarra {
   width: 100%;
   max-width: 700px;
@@ -235,53 +239,13 @@ footer .pie .redes {
 footer .pie .info {
   display: flex;
   flex-wrap: wrap;
+  gap: 5px;
   min-width: 350px;
 }
 footer #jerry {
   border-radius: 20px;
 }
 
-/*variables*/
-/*especial*/
-@media (max-width: 952px) {
-  nav .enlace {
-    padding-left: 20px;
-  }
-  nav li a {
-    font-size: 16px;
-  }
-}
-/*nav*/
-@media (max-width: 858px) {
-  nav .checkbtn {
-    display: block;
-  }
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #2c3e50;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  nav ul li a .active, nav ul li a:hover {
-    background: none;
-    color: #fef972;
-  }
-  nav #check:checked ~ ul {
-    left: 0;
-  }
-}
 /* ANIMACIONES */
 .shake__lento {
   font-size: 10rem;
@@ -340,11 +304,11 @@ footer #jerry {
   }
 }
 /*TODAS*/
-.ContenidoPagecart, .ContenidoPage, .titulos, .filtros, .ContenidoCatalogo {
+.contenidoPagecart, .contenidoPage, .titulos, .filtros, .contenidoCatalogo {
   padding-bottom: 5%;
 }
 
-.ContenidoPage {
+.contenidoPage {
   width: 100%;
   display: grid;
   grid-template-areas: "centrarbarra centrarbarra" "texto_index imagen_index";
@@ -410,7 +374,7 @@ footer #jerry {
 }
 
 /* PAGINA CATALOGO*/
-#CatalogoD {
+#catalogoD {
   display: grid;
   gap: 10px;
   align-items: flex-start;
@@ -420,10 +384,13 @@ footer #jerry {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.ContenidoCatalogo {
+.titulocatalogo h1 {
+  margin-left: 7px;
+}
+
+.contenidoCatalogo {
   grid-area: galeria;
   display: flex;
-  flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 20px;
   margin-right: auto;
@@ -436,10 +403,15 @@ footer #jerry {
   background-color: #fef972;
   padding: 20px;
   border-radius: 20px;
-  margin-left: auto;
+  margin-left: 10px;
+  min-width: 200px;
 }
 .filtros p {
   color: #0e0e0e;
+  font-size: 2.4rem;
+}
+.filtros li {
+  font-size: 1.4rem;
 }
 
 .galeria {
@@ -472,7 +444,7 @@ footer #jerry {
   margin-left: 10%;
 }
 
-.ContenidoPagecart {
+.contenidoPagecart {
   align-content: center;
   padding: auto;
   margin: auto;
@@ -517,11 +489,14 @@ footer #jerry {
 }
 .registertitle h1 {
   margin-bottom: 7px;
+  margin-left: 5px;
+}
+.registertitle p {
+  margin-left: 7px;
 }
 
 .formulario-de-registro {
   background-color: #9FE6E8;
-  padding: 20px;
   border-radius: 20px;
   margin-bottom: 10%;
   margin-left: 5%;
@@ -588,10 +563,51 @@ fieldset select {
   margin-bottom: 5%;
 }
 
+/*IMPORT DE PARCIAL ESPECIAL*/
+/*especial*/
+@media (max-width: 952px) {
+  nav .enlace {
+    padding-left: 20px;
+  }
+  nav li a {
+    font-size: 16px;
+  }
+}
+/*nav*/
+@media (max-width: 858px) {
+  nav .checkbtn {
+    display: block;
+  }
+  nav ul {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: #fef972;
+  }
+  nav ul li a .active, nav ul li a:hover {
+    color: #0e0e0e;
+  }
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+}
 /*standarts*/
 @media (max-width: 768px) {
-  .ContenidoPage {
-    display: grid;
+  .contenidoPage {
     grid-template-areas: "centrarbarra" "texto_index" "imagen_index";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -622,7 +638,7 @@ fieldset select {
     text-align: center;
     margin-bottom: 5%;
   }
-  #CatalogoD {
+  #catalogoD {
     grid-template-areas: "filtro" "galeria";
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto auto;
@@ -632,8 +648,9 @@ fieldset select {
     margin-right: auto;
     width: 50%;
     margin-top: 10px;
+    min-width: 350px;
   }
-  .ContenidoCatalogo {
+  .contenidoCatalogo {
     justify-content: center;
   }
   .contenedorcarro .galeria {

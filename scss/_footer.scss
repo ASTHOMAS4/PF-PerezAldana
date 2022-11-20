@@ -1,7 +1,7 @@
 footer {
     display: inline;
     left: 0px;
-    background-color: #9FE6E8;
+    background-color: $colorrick;
     position: fixed;
     width: 100%;
     bottom:0;
@@ -11,7 +11,7 @@ footer {
 
     p{
         margin-bottom: 20px;
-        color: #0e0e0e; 
+        color: $colornegro; 
         text-align: right;
         font-size: large;
         font-family: "Outfit", sans-serif;
@@ -39,6 +39,7 @@ footer {
         .info{
             display: flex;
             flex-wrap: wrap;
+            gap: 5px;
             min-width: 350px;
         }
     }

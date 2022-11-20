@@ -1,8 +1,3 @@
-$colorrick: #9FE6E8 ;
-$colormorty: #fef972;
-$colornegro: #0e0e0e;
-$sombraazul: #055ec4;
-$colornavresponsive: #2c3e50;
 
 nav{
     background: $colorrick;
@@ -16,7 +11,8 @@ nav{
         }
     }
     ul{
-        float: right;
+        display: flex;
+        justify-content: right;
         margin-right: 20px;
     } 
     li{
